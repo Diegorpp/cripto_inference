@@ -1,0 +1,414 @@
+{
+    "0": {
+        "text": "BTC breaking $100k before Christmas! Mark my words",
+        "label": "target_price"
+    },
+    "1": {
+        "text": "Ethereum will crash to $800 within the next 6 months",
+        "label": "target_price"
+    },
+    "2": {
+        "text": "Solana $SOL rejected again. Buy the dip at $176 or the breakout at $207. Target stays $300.",
+        "label": "target_price"
+    },
+    "3": {
+        "text": "$SOL will soon regain its bullish momentum? Looking to buy a lot if it dips to an OB\/BPR level around $182. According to the LTF confirmations we get, this would be a good buying area. Eyes open",
+        "label": "target_price"
+    },
+    "4": {
+        "text": "This time, ETHEREUM is coming to break $5,000 Believe in somETHing",
+        "label": "target_price"
+    },
+    "5": {
+        "text": "DOGE hitting $2.50 when my ex finally texts me back (never)",
+        "label": "target_price"
+    },
+    "6": {
+        "text": "PEPE hitting $0.001 by Valentine's Day. Love is in the air and so are meme coins",
+        "label": "target_price"
+    },
+    "7": {
+        "text": "XRP going to zero. Absolutely worthless by summer",
+        "label": "target_price"
+    },
+    "8": {
+        "text": "ADA will touch $10 when my grandmother finally understands what blockchain is",
+        "label": "target_price"
+    },
+    "9": {
+        "text": "AVAX $200 EOY or I quit trading forever",
+        "label": "target_price"
+    },
+    "10": {
+        "text": "Bitcoin flash crash to $15k incoming. Buy orders set",
+        "label": "target_price"
+    },
+    "11": {
+        "text": "SHIB deleting three zeros. $0.01 is inevitable within 18 months",
+        "label": "target_price"
+    },
+    "12": {
+        "text": "LINK $500 next cycle. Chainlink oracles will rule the world",
+        "label": "target_price"
+    },
+    "13": {
+        "text": "DOT to $3 if this bear market continues. Buckle up",
+        "label": "target_price"
+    },
+    "14": {
+        "text": "MATIC hitting $5 during the next FIFA World Cup. Football season pump incoming",
+        "label": "target_price"
+    },
+    "15": {
+        "text": "SOL back to $8. This Solana pump is fake",
+        "label": "target_price"
+    },
+    "16": {
+        "text": "UNI $50 when DeFi summer 2.0 hits. Mark this tweet",
+        "label": "target_price"
+    },
+    "17": {
+        "text": "ATOM $100 minimum this bull run. Cosmos ecosystem undervalued AF",
+        "label": "target_price"
+    },
+    "18": {
+        "text": "DOGE $2.50 by my birthday. Best gift ever would be financial freedom",
+        "label": "target_price"
+    },
+    "19": {
+        "text": "ETH $10k minimum during the next halving cycle. Layer 2s will drive this",
+        "label": "target_price"
+    },
+    "20": {
+        "text": "ALGO dead coin. Maybe $0.05 if they're lucky",
+        "label": "target_price"
+    },
+    "21": {
+        "text": "SOL up 150% from current levels by end of Q1",
+        "label": "pct_change"
+    },
+    "22": {
+        "text": "DOGE gonna lose 60% of its value. Meme coins are dead",
+        "label": "pct_change"
+    },
+    "23": {
+        "text": "$ETH vs $BTC - 3W. Supertrend just flipped green. Last time this happened, Ethereum pumped +260% against Bitcoin.",
+        "label": "pct_change"
+    },
+    "24": {
+        "text": "ADA will dump 80% before finding a bottom. Cardano ecosystem is failing",
+        "label": "pct_change"
+    },
+    "25": {
+        "text": "AVAX pumping 300% by summer. Avalanche is the ETH killer we've been waiting for",
+        "label": "pct_change"
+    },
+    "26": {
+        "text": "SHIB gonna lose 90% of its value when the meme coin hype dies",
+        "label": "pct_change"
+    },
+    "27": {
+        "text": "LINK up 500% this cycle. Oracles are the backbone of DeFi",
+        "label": "pct_change"
+    },
+    "28": {
+        "text": "DOT will crash 70% in the next bear market. Polkadot narrative is dead",
+        "label": "pct_change"
+    },
+    "29": {
+        "text": "MATIC doubles from here by Q2 2025. Polygon zkEVM is the future",
+        "label": "pct_change"
+    },
+    "30": {
+        "text": "UNI down 50% minimum during next correction. DeFi is overvalued",
+        "label": "pct_change"
+    },
+    "31": {
+        "text": "ATOM exploding 400% when Cosmos IBC really takes off",
+        "label": "pct_change"
+    },
+    "32": {
+        "text": "ALGO bleeding another 60%. This project is going nowhere",
+        "label": "pct_change"
+    },
+    "33": {
+        "text": "XRP might pump 200% if they win the SEC case next year",
+        "label": "pct_change"
+    },
+    "34": {
+        "text": "NEAR dropping 40% before finding support. Layer 1s are struggling",
+        "label": "pct_change"
+    },
+    "35": {
+        "text": "FTM will 10x from current levels. Fantom Opera is underrated",
+        "label": "pct_change"
+    },
+    "36": {
+        "text": "LTC losing 30% more before halving pump kicks in",
+        "label": "pct_change"
+    },
+    "37": {
+        "text": "APT gonna moon 600% this bull run. Aptos Move language is revolutionary",
+        "label": "pct_change"
+    },
+    "38": {
+        "text": "ICP will retrace 85% to pre-launch levels. Internet Computer was overhyped",
+        "label": "pct_change"
+    },
+    "39": {
+        "text": "SAND up 250% when metaverse hype returns in 2025",
+        "label": "pct_change"
+    },
+    "40": {
+        "text": "VET bleeding 45% more. VeChain partnerships don't mean anything anymore",
+        "label": "pct_change"
+    },
+    "41": {
+        "text": "BTC will trade between 45k-55k throughout 2025",
+        "label": "range"
+    },
+    "42": {
+        "text": "ETH consolidation zone: $2800-$3200 next month",
+        "label": "range"
+    },
+    "43": {
+        "text": "Tom Lee just said he thinks Ethereum $ETH could hit $5,500 in the near term and end the year at $10,000-$12,000",
+        "label": "range"
+    },
+    "44": {
+        "text": "SOL gonna crab between $180-$220 until my ex stops liking my Instagram stories which could be anywhere from 3 days to 3 years",
+        "label": "range"
+    },
+    "45": {
+        "text": "ADA trapped in hell between $0.30-$0.45 forever or until Charles stops making videos about Africa whichever comes first lmao",
+        "label": "range"
+    },
+    "46": {
+        "text": "DOGE will oscillate between 0.08-0.32 cents following Elon's mood swings. When he's happy dogs pump when he's sad they dump it's science",
+        "label": "range"
+    },
+    "47": {
+        "text": "LINK marines we're stuck in $6.50-$8.20 purgatory until the next bull run or until my wife understands what an oracle is (never)",
+        "label": "range"
+    },
+    "48": {
+        "text": "AVAX consolidating $24-$31 but only on Tuesdays when Mercury isn't in retrograde and my horoscope says buy the dip",
+        "label": "range"
+    },
+    "49": {
+        "text": "XRP will chop between $0.45-$0.65 in this range until SEC guy gets tired of playing games or my pizza arrives whichever is sooner",
+        "label": "range"
+    },
+    "50": {
+        "text": "MATIC stuck between $0.70-$0.90 forever because polygon rhymes with gone and that's bearish energy ser ngmi if you hold",
+        "label": "range"
+    },
+    "51": {
+        "text": "UNI dancing between $4.80-$6.20 until DeFi summer 2.0 hits or my mom stops asking if I won the lottery yet (spoiler: I didn't)",
+        "label": "range"
+    },
+    "52": {
+        "text": "DOT gonna sideways crab $4.10-$5.90 because my magic 8 ball said 'reply hazy try again' and that's basically range bound advice",
+        "label": "range"
+    },
+    "53": {
+        "text": "ATOM trapped between $7.80-$10.20 in the cosmos void until IBC actually does something or heat death of universe",
+        "label": "range"
+    },
+    "54": {
+        "text": "ALGO range bound $0.12-$0.18 until they fix their tokenomics or my therapist says I'm cured of hopium addiction",
+        "label": "range"
+    },
+    "55": {
+        "text": "FTM oscillating $0.25-$0.40 like a ghost that can't decide if it wants to haunt this portfolio or move on to crypto heaven",
+        "label": "range"
+    },
+    "56": {
+        "text": "NEAR chopping between $1.20-$1.80 until they rebrand to FAR or my landlord accepts crypto rent payments (he won't)",
+        "label": "range"
+    },
+    "57": {
+        "text": "LTC grinding between $68-$88 because it's digital silver but silver is boring and Charlie Lee sold the top that one time",
+        "label": "range"
+    },
+    "58": {
+        "text": "SOL gonna crab between $180-$220 until my ex stops liking my Instagram stories which should be by Valentine's Day 2025 hopefully",
+        "label": "range"
+    },
+    "59": {
+        "text": "DOGE will oscillate between 0.08-0.32 cents following Elon's mood swings throughout Q2 2025 when Tesla earnings come out",
+        "label": "range"
+    },
+    "60": {
+        "text": "XRP will chop between $0.45-$0.65 until the SEC case resolves by end of summer 2025 or my pizza arrives whichever is sooner",
+        "label": "range"
+    },
+    "61": {
+        "text": "AVAX will be top 5 by market cap this bull run",
+        "label": "ranking"
+    },
+    "62": {
+        "text": "LINK dropping out of top 20 soon",
+        "label": "ranking"
+    },
+    "63": {
+        "text": "PEPE gonna crack top 10 by market cap when normies discover memes are the future",
+        "label": "ranking"
+    },
+    "64": {
+        "text": "SOL will flip ETH and become #2 crypto by end of 2025 mark my words",
+        "label": "ranking"
+    },
+    "65": {
+        "text": "ADA falling out of top 15 soon. Cardano hype is dead and buried",
+        "label": "ranking"
+    },
+    "66": {
+        "text": "DOGE will be the most valuable cryptocurrency in the universe when Elon colonizes Mars",
+        "label": "none"
+    },
+    "67": {
+        "text": "XRP will be worth $589 per coin and rank #1 globally",
+        "label": "none"
+    },
+    "68": {
+        "text": "MATIC dropping to #25 by market cap. Polygon is getting rekt by competition",
+        "label": "ranking"
+    },
+    "69": {
+        "text": "SHIB will never break top 50 ever again. Meme season is over forever",
+        "label": "none"
+    },
+    "70": {
+        "text": "ATOM will be top 3 DeFi coin by summer when Cosmos IBC goes mainstream",
+        "label": "ranking"
+    },
+    "71": {
+        "text": "UNI falling to #30 because DeFi is dead and everyone moved to meme coins",
+        "label": "ranking"
+    },
+    "72": {
+        "text": "DOT will be the king of Layer 0s and reach top 8 this cycle",
+        "label": "ranking"
+    },
+    "73": {
+        "text": "NEAR Protocol gonna be #1 developer platform beating Ethereum by 2026",
+        "label": "ranking"
+    },
+    "74": {
+        "text": "FTM will never see top 100 again. Fantom is a ghost chain literally and figuratively",
+        "label": "none"
+    },
+    "75": {
+        "text": "ALGO will be top 12 when they finally fix their tokenomics disaster",
+        "label": "ranking"
+    },
+    "76": {
+        "text": "VET will flip LINK and enter top 18 when China unbans crypto",
+        "label": "ranking"
+    },
+    "77": {
+        "text": "ICP will pump 500% and reach top 20 by market cap next year",
+        "label": "pct_change"
+    },
+    "78": {
+        "text": "LTC will be #15 by market cap during next halving cycle. Digital silver narrative returns",
+        "label": "ranking"
+    },
+    "79": {
+        "text": "APT will be the Solana killer and reach top 6 by market cap this bull run",
+        "label": "ranking"
+    },
+    "80": {
+        "text": "SAND will be #1 gaming crypto when metaverse hype returns in 2025",
+        "label": "ranking"
+    },
+    "81": {
+        "text": "Crypto markets are so unpredictable right now. Nobody knows what's happening",
+        "label": "none"
+    },
+    "82": {
+        "text": "HODL strong everyone! Diamond hands will be rewarded",
+        "label": "none"
+    },
+    "83": {
+        "text": "HODL strong everyone! Diamond hands will be rewarded",
+        "label": "none"
+    },
+    "84": {
+        "text": "It's become contrarian to hold $SOL again. We all know how this ends.",
+        "label": "none"
+    },
+    "85": {
+        "text": "$sol vs $btc still some room down but monthly SFP clear shows reversal in the making #solana",
+        "label": "none"
+    },
+    "86": {
+        "text": "We got a 4H inside bar on SOL and a 4H candle w no bottom wick Decent chance we take out yday's low before a proper bounce imo... one of these two",
+        "label": "range"
+    },
+    "87": {
+        "text": "$BTC is now at a very crucial level. If this level holds, BTC could see a reversal. Otherwise, the dump could be severe.",
+        "label": "none"
+    },
+    "88": {
+        "text": "JUST IN: BlackRock sent 10K $BTC to 40 different wallets! Why are they doing this, and what does it mean for Bitcoin? I scanned all 40 wallets, studied everything, and was shocked. Here's what it means and what's happening behind the scenes",
+        "label": "none"
+    },
+    "89": {
+        "text": "New $DOGE ATH is imminent imo",
+        "label": "none"
+    },
+    "90": {
+        "text": "Another boring sideways day in crypto. Nothing moves except my anxiety.",
+        "label": "none"
+    },
+    "91": {
+        "text": "Whales are just playing with retail. Same game, different day.",
+        "label": "none"
+    },
+    "92": {
+        "text": "Macro still controls everything. Until the Fed pivots, nothing matters.",
+        "label": "none"
+    },
+    "93": {
+        "text": "Crypto Twitter is euphoric again. Usually not a good sign.",
+        "label": "none"
+    },
+    "94": {
+        "text": "The chart looks like it wants to go up, but also like it wants to go down. Classic.",
+        "label": "none"
+    },
+    "95": {
+        "text": "Bullish divergence on the RSI but volume is dead. Mixed signals everywhere.",
+        "label": "none"
+    },
+    "96": {
+        "text": "This looks like the calm before the storm\u2026 or maybe just calm forever.",
+        "label": "none"
+    },
+    "97": {
+        "text": "Altcoin season is always just around the corner, right?",
+        "label": "none"
+    },
+    "98": {
+        "text": "If I had a dollar for every time someone called the bottom, I'd have more than my portfolio is worth.",
+        "label": "none"
+    },
+    "99": {
+        "text": "Market structure is holding\u2026 for now.",
+        "label": "none"
+    },
+    "100": {
+        "text": "Feels like we're about to witness something big, but I have no idea what.",
+        "label": "none"
+    },
+    "101": {
+        "text": "Everyone is bullish, which makes me bearish, which probably makes me wrong.",
+        "label": "none"
+    },
+    "102": {
+        "text": "Every dip looks like the last dip until it doesn't.",
+        "label": "none"
+    }
+}

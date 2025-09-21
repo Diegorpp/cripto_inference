@@ -150,13 +150,13 @@ def extract_ranking(text: str) -> int | None:
     Extrai a posição de ranking do texto.
     Retorna o ranking como int ou None se não encontrar.
     """
-    rank_pattern = re.compile(r"(?:rank(?:ing)?\s*(?:to|at|as)?\s*|#)(\d{1,3})", re.IGNORECASE)
-    if rank_pattern == None:
-        # top like references
-        rank_pattern = re.compile(r"(?:top\s*(?:to|at|as)?\s*|#)(\d{1,3})", re.IGNORECASE)
-    match = rank_pattern.search(text)
+    # existing top words like references
+    top_patterns = re.compile(r"top\s*(?:to|at|as)?\s*\d{1,3}", re.IGNORECASE)
+
+    match = top_patterns.search(text)
     if match:
-        return int(match.group(1))
+        top = match.group(0).split()[-1]
+        return top
     return None
 
 
@@ -169,12 +169,21 @@ def extract_info_based_on_type(target_type: str, text: str, asset: str) -> Dict:
     Extrai informações específicas com base no tipo de alvo.
     Retorna um dict com os valores extraídos.
     """
+    notes = []
     currency = extract_currency(text)
+    if currency is None:
+        currency = "USD"  # Default currency if none found
+        notas_currency = "USD assumed as default currency" # TODO: Adicionar isso na lista de notas depois
+        notes.append(notas_currency)
 
     if target_type == "target_price":
         numbers = extract_numbers(text)
-        if len(numbers) == 1:
+        if len(numbers) >= 1: # Da pra criar uma função de logica para escolher qual valor utilizar
             numbers = numbers[0]['value']
+        if numbers == []:
+            numbers = None
+            notas_price = "No price found"
+            notes.append(notas_price)
         target_price = TargetPrice(
             asset=asset,
             price=numbers,
@@ -184,6 +193,7 @@ def extract_info_based_on_type(target_type: str, text: str, asset: str) -> Dict:
 
     elif target_type == "pct_change":
         percent = extract_percent(text)
+        # breakpoint()
         percent_change = PercentageChange(
             asset=asset,
             percentage=percent,
@@ -193,6 +203,7 @@ def extract_info_based_on_type(target_type: str, text: str, asset: str) -> Dict:
 
     elif target_type == "range":
         min, max = extract_min_max(text)
+        # breakpoint()
         range = Range(
             asset=asset,
             min=min,
@@ -230,7 +241,19 @@ def parse_datetime(text: str, base_time: datetime | None = None) -> datetime | N
         settings["RELATIVE_BASE"] = base_time
 
     dt = dateparser.parse(text, settings=settings)
-    return dt
+
+    if dt is None:
+        return Timeframe(
+            explicit=False,
+            start=None,
+            end=None
+        )
+    return Timeframe(
+        explicit=True,
+        start=base_time.isoformat(),
+        end=dt.isoformat()
+    )
+    # return dt
 
 
 def extract_time_expression(text: str) -> str | None:

@@ -6,6 +6,11 @@ from src.models import classify_target_type, extract_model_notes
 from src.parsers import ( get_asset_list, extract_asset,
                          extract_info_based_on_type, extract_and_parse_time
                          )
+from fastapi import FastAPI
+
+BEAR_BULL_THRESHOLD = 0.5
+
+app = FastAPI()
 
 # Entrega:
 # Serviço mínimo com endpoint POST /parse_prediction e README (setup/env/exemplos).
@@ -14,6 +19,8 @@ from src.parsers import ( get_asset_list, extract_asset,
 # Arquivo tricky_cases.md com exemplos difíceis e explicação (é tudo bem ter tricky cases).
 
 def processa_tweet(tweet: Tweet) -> Output:
+    extra_notes = []
+    
     # Primeiro identificar o tipo de alvo {target_price, pct_change, range, ranking, none}
     target_type = classify_target_type(tweet.text)
 
@@ -42,17 +49,18 @@ def processa_tweet(tweet: Tweet) -> Output:
     # Positivo = 0, negativo = 1, neutro = 2
     # If neutral is higher than 50%, then bear_bull = 0
     # find neutral score
+    neutral = 0
     for idx, item in enumerate(result):
         if item['label'] == 'neutral':
-            if item['score'] > 0.5:
+            if item['score'] > BEAR_BULL_THRESHOLD:
                 neutral = idx
                 break
-    if result[neutral]['score'] > 0.5:
+    if result[neutral]['score'] > BEAR_BULL_THRESHOLD:
         bear_bull = 0
     else:
         bear_bull = result[0]['score'] * 100 - result[1]['score'] * 100 # Estou ignorando o caso neutro a principio
-    print(result)
 
+    # TODO: Adicionar a parte do retweet
     # Sexto, identificar notas relevantes (ex.: 
     # "Quarter detectado no contexto", 
     # "Retweet atribuído ao autor original"
@@ -74,9 +82,16 @@ def processa_tweet(tweet: Tweet) -> Output:
     
     output.notes = notes.message.content
 
-    print(output)
+    # print(output)
     return output
     # Oitavo criar uma API para receber o tweet e devolver a resposta.
+
+
+@app.post("/parse_prediction", response_model=Output)
+async def parse_prediction(tweet: Tweet):
+    resultado = processa_tweet(tweet)
+    return resultado
+
 
 def main():
     df = pd.read_json("data/dataset.json")

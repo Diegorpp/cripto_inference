@@ -3,26 +3,26 @@ from pydantic import BaseModel
 
 class TargetPrice(BaseModel):
     asset: str # Ticker: BTC, ETH, SOL, DOGE, etc.
-    price: float # Valor do preço alvo: 20000, 30000, 100000
+    price: float | None # Valor do preço alvo: 20000, 30000, 100000
     currency: str # Moeda de referência: USD, BRL, EUR, etc.
 
 
 class PercentageChange(BaseModel):
     asset: str # Ticker: BTC, ETH, SOL, DOGE, etc.
-    percentage: float # Variação esperada: 50 (alta de 50%), -30 (queda de 30%)
+    percentage: float | int | None # Variação esperada: 50 (alta de 50%), -30 (queda de 30%)
     currency: str # Moeda de referência: USD, BRL, EUR, etc.
 
 
 class Range(BaseModel):
     asset: str # Ticker: BTC, ETH, SOL, DOGE, etc.
-    min: float # Limite inferior: 40000
-    max: float # Limite superior: 60000
+    min: float | int | None # Limite inferior: 40000
+    max: float | int | None # Limite superior: 60000
     currency: str # Moeda de referência: USD, BRL, EUR, etc.
 
 
 class Ranking(BaseModel):
     asset: str # Ticker: BTC, ETH, SOL, DOGE, etc.
-    ranking: int # Posição alvo: 1 (primeiro), 3 (terceiro), 10 (décimo)
+    ranking: int | None # Posição alvo: 1 (primeiro), 3 (terceiro), 10 (décimo)
     currency: str # Moeda de referência do ranking: USD, BRL, EUR
 
 
@@ -43,26 +43,3 @@ class Output(BaseModel):
 class Tweet(BaseModel):
     text: str
     date: str
-
-# Exemplo de saida
-# {
-#   "target_type": "ranking",
-#   "extracted_value": {
-#     "asset": "PEPE",
-#     "ranking": 10,
-#     "currency": "USD"
-#   },
-#   "timeframe": {
-#     "explicit": false,
-#     "start": null,
-#     "end": null
-#   },
-#   "bear_bull": 65,
-#   "notes": [
-#     "Market cap ranking assumed",
-#     "This cycle is vague timeframe",
-#     "Quote tweet disagreeing with @bearish_analyst's bearish prediction",
-#     "Frog and diamond emojis indicate strong bullish sentiment",
-#     "USD market cap ranking context"
-#   ]
-# }

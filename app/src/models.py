@@ -70,4 +70,5 @@ def extract_model_notes(tweet, contexto) -> List[str]:
     return response
 
 
+
 # classify_target_type("BTC breaking $100k before Christmas! Mark my words")

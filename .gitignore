@@ -1,3 +1,8 @@
+*/app/src/results/
+./data/result_correto.txt
+./data/result_errado.txt
+./data/corrigindo
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
