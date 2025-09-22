@@ -41,5 +41,5 @@ class Output(BaseModel):
     notes: list[str] | None # ex.: ["Quarter detectado no contexto", "Retweet atribuído ao autor original"]
 
 class Tweet(BaseModel):
-    text: str
-    date: str
+    post_text: str
+    post_created_at: str

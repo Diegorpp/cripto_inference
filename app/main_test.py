@@ -20,7 +20,7 @@ def test_classify():
 
         text = texts[idx]
         date = datas[idx]
-        tweet = {"text": text, "date": str(date)}
+        tweet = {"post_text": text, "post_created_at": str(date)}
         response = requests.post(API_URL,json=tweet)
         if response.status_code == 200:
             result_correto.append((text, response.status_code, response.text))

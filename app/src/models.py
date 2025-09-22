@@ -2,6 +2,7 @@ import re
 from typing import List, Dict
 from decimal import Decimal
 from groq import Groq
+from transformers import pipeline
 import os
 
 GROQ_KEY = os.getenv("GROQ_KEY")

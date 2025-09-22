@@ -17,17 +17,38 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
-from models import classify_target_type
+from src.models import classify_target_type
 import time
-
+from pathlib import Path
+from transformers import pipeline
+from src.schema import Tweet
 
 # Definindo os labels
 # Suas 5 classes
 labels = ["target_price", "pct_change", "range", "ranking", "none"]
 label2id = {label: i for i, label in enumerate(labels)}
 id2label = {i: label for label, i in label2id.items()}
+BEAR_BULL_THRESHOLD = 0.5
+
 
 tokenizer = RobertaTokenizer.from_pretrained("cardiffnlp/twitter-roberta-base")
+
+
+def model_init():
+    return RobertaForSequenceClassification.from_pretrained(
+        "cardiffnlp/twitter-roberta-base",
+        num_labels=len(labels),
+        id2label=id2label,
+        label2id=label2id,
+    )
+
+
+def hp_space(trial):
+    return {
+        "learning_rate": trial.suggest_categorical("learning_rate", [2e-5, 3e-5, 5e-5]),
+        "per_device_train_batch_size": trial.suggest_categorical("per_device_train_batch_size", [2, 4, 8]),
+        "num_train_epochs": trial.suggest_categorical("num_train_epochs", [3, 4, 5]),
+    }
 
 
 def generate_labels():
@@ -78,13 +99,6 @@ def preprocess(example):
     return enc
 
 
-# def preprocess(example):
-#     breakpoint()
-#     enc = tokenizer(example["text"], truncation=True, padding="max_length", max_length=64)
-#     enc["label"] = label2id[example["label"]]
-#     return enc
-
-
 def compute_metrics(pred):
     preds = np.argmax(pred.predictions, axis=1)
     labels_true = pred.label_ids
@@ -132,13 +146,26 @@ def custom_pipeline_classifier():
     )
 
     trainer = Trainer(
-        model=model,
+        # model=model,
+        model_init=model_init,
         args=training_args,
         train_dataset=dataset["train"],
         eval_dataset=dataset["test"],
         tokenizer=tokenizer,
         compute_metrics=compute_metrics,
     )
+
+    best_run = trainer.hyperparameter_search(
+        direction="maximize",      # queremos maximizar f1/accuracy
+        hp_space=hp_space,
+        n_trials=5,                # quantos conjuntos de hiperparâmetros testar
+    )
+
+    print("Best hyperparameters:", best_run.hyperparameters)
+
+    # Atualiza args
+    for key, value in best_run.hyperparameters.items():
+        setattr(trainer.args, key, value)
 
     trainer.train()
 
@@ -153,8 +180,8 @@ def custom_pipeline_classifier():
     disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=labels)
 
 
-    trainer.save_model("./modelo_finetuned")  # salva modelo + tokenizer
-    tokenizer.save_pretrained("./modelo_finetuned")
+    trainer.save_model("./finetuned_models")  # salva modelo + tokenizer
+    tokenizer.save_pretrained("./finetuned_models")
 
     plt.figure(figsize=(8, 6))
     sns.heatmap(
@@ -166,6 +193,59 @@ def custom_pipeline_classifier():
 
     # plt.title("Confusion Matrix")
     # plt.show()
+
+
+
+def custom_target_classify(tweet: Tweet) -> str:
+    diretorio = Path("./src/finetuned_models")
+    MODEL_PATH = "./src/finetuned_models"
+    if diretorio.exists() and diretorio.is_dir():
+        custom_model = RobertaForSequenceClassification.from_pretrained(MODEL_PATH)
+        new_tokenizer = RobertaTokenizer.from_pretrained(MODEL_PATH)
+        pipeline_model = pipeline(task="text-classification", model=custom_model, tokenizer=new_tokenizer)
+        result = pipeline_model(tweet.post_text, top_k=5)
+        # find highest value
+        score = result[0]
+        for item in result:
+            if item['score'] > score['score']:
+                score = item['score']
+        return score['label']
+    else:
+        return None
+        print('Modelo customizado não encontrado, definir um modelo padrão')
+
+def sentiment_bear_bull(tweet: Tweet) -> float | int:
+    """
+    Analisa o sentimento do tweet e retorna um valor entre -100 (muito bearish) e +100 (muito bullish).
+    """
+
+    # diretorio = Path("./src/finetuned_models")
+    # MODEL_PATH = "./src/finetuned_models"
+    # if diretorio.exists() and diretorio.is_dir():
+    #     custom_model = RobertaForSequenceClassification.from_pretrained(MODEL_PATH)
+    #     new_tokenizer = RobertaTokenizer.from_pretrained(MODEL_PATH)
+    #     pipeline_model = pipeline(task="text-classification", model=custom_model, tokenizer=new_tokenizer)
+    #     result = pipeline_model(tweet.post_text, top_k=3)
+    # else:
+    pipeline_model = pipeline(model="ProsusAI/finbert", task="text-classification")
+    result = pipeline_model(tweet.post_text, top_k=3)
+    # get percent from all classes
+    # Positivo = 0, negativo = 1, neutro = 2
+    # If neutral is higher than 50%, then bear_bull = 0
+    # find neutral score
+    neutral = 0
+    for idx, item in enumerate(result):
+        if item['label'] == 'neutral':
+            if item['score'] > BEAR_BULL_THRESHOLD:
+                neutral = idx
+                break
+    
+    print(f'resultado bear bull: {result}')
+    if result[neutral]['score'] > BEAR_BULL_THRESHOLD:
+        bear_bull = 0
+    else:
+        bear_bull = result[0]['score'] * 100 - result[1]['score'] * 100 # Estou ignorando o caso neutro a principio
+    return bear_bull
 
 
 if __name__ == "__main__":

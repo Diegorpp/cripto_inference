@@ -177,6 +177,7 @@ def extract_info_based_on_type(target_type: str, text: str, asset: str) -> Dict:
         notes.append(notas_currency)
 
     if target_type == "target_price":
+        # Extração de números esta separada aqui
         numbers = extract_numbers(text)
         if len(numbers) >= 1: # Da pra criar uma função de logica para escolher qual valor utilizar
             numbers = numbers[0]['value']
