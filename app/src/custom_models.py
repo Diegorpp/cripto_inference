@@ -46,7 +46,9 @@ def model_init():
 def hp_space(trial):
     return {
         "learning_rate": trial.suggest_categorical("learning_rate", [2e-5, 3e-5, 5e-5]),
-        "per_device_train_batch_size": trial.suggest_categorical("per_device_train_batch_size", [2, 4, 8]),
+        "per_device_train_batch_size": trial.suggest_categorical(
+            "per_device_train_batch_size", [2, 4, 8]
+        ),
         "num_train_epochs": trial.suggest_categorical("num_train_epochs", [3, 4, 5]),
     }
 
@@ -156,9 +158,9 @@ def custom_pipeline_classifier():
     )
 
     best_run = trainer.hyperparameter_search(
-        direction="maximize",      # queremos maximizar f1/accuracy
+        direction="maximize",  # queremos maximizar f1/accuracy
         hp_space=hp_space,
-        n_trials=5,                # quantos conjuntos de hiperparâmetros testar
+        n_trials=5,  # quantos conjuntos de hiperparâmetros testar
     )
 
     print("Best hyperparameters:", best_run.hyperparameters)
@@ -179,7 +181,6 @@ def custom_pipeline_classifier():
     cm = confusion_matrix(y_true, y_pred, labels=list(range(len(labels))))
     disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=labels)
 
-
     trainer.save_model("./finetuned_models")  # salva modelo + tokenizer
     tokenizer.save_pretrained("./finetuned_models")
 
@@ -195,56 +196,51 @@ def custom_pipeline_classifier():
     # plt.show()
 
 
-
 def custom_target_classify(tweet: Tweet) -> str:
     diretorio = Path("./src/finetuned_models")
     MODEL_PATH = "./src/finetuned_models"
     if diretorio.exists() and diretorio.is_dir():
         custom_model = RobertaForSequenceClassification.from_pretrained(MODEL_PATH)
         new_tokenizer = RobertaTokenizer.from_pretrained(MODEL_PATH)
-        pipeline_model = pipeline(task="text-classification", model=custom_model, tokenizer=new_tokenizer)
+        pipeline_model = pipeline(
+            task="text-classification", model=custom_model, tokenizer=new_tokenizer
+        )
         result = pipeline_model(tweet.post_text, top_k=5)
         # find highest value
         score = result[0]
         for item in result:
-            if item['score'] > score['score']:
-                score = item['score']
-        return score['label']
+            if item["score"] > score["score"]:
+                score = item["score"]
+        return score["label"]
     else:
         return None
-        print('Modelo customizado não encontrado, definir um modelo padrão')
+        print("Modelo customizado não encontrado, definir um modelo padrão")
+
 
 def sentiment_bear_bull(tweet: Tweet) -> float | int:
     """
     Analisa o sentimento do tweet e retorna um valor entre -100 (muito bearish) e +100 (muito bullish).
     """
 
-    # diretorio = Path("./src/finetuned_models")
-    # MODEL_PATH = "./src/finetuned_models"
-    # if diretorio.exists() and diretorio.is_dir():
-    #     custom_model = RobertaForSequenceClassification.from_pretrained(MODEL_PATH)
-    #     new_tokenizer = RobertaTokenizer.from_pretrained(MODEL_PATH)
-    #     pipeline_model = pipeline(task="text-classification", model=custom_model, tokenizer=new_tokenizer)
-    #     result = pipeline_model(tweet.post_text, top_k=3)
-    # else:
     pipeline_model = pipeline(model="ProsusAI/finbert", task="text-classification")
     result = pipeline_model(tweet.post_text, top_k=3)
-    # get percent from all classes
     # Positivo = 0, negativo = 1, neutro = 2
     # If neutral is higher than 50%, then bear_bull = 0
     # find neutral score
     neutral = 0
     for idx, item in enumerate(result):
-        if item['label'] == 'neutral':
-            if item['score'] > BEAR_BULL_THRESHOLD:
+        if item["label"] == "neutral":
+            if item["score"] > BEAR_BULL_THRESHOLD:
                 neutral = idx
                 break
-    
-    print(f'resultado bear bull: {result}')
-    if result[neutral]['score'] > BEAR_BULL_THRESHOLD:
+
+    print(f"resultado bear bull: {result}")
+    if result[neutral]["score"] > BEAR_BULL_THRESHOLD:
         bear_bull = 0
     else:
-        bear_bull = result[0]['score'] * 100 - result[1]['score'] * 100 # Estou ignorando o caso neutro a principio
+        bear_bull = (
+            result[0]["score"] * 100 - result[1]["score"] * 100
+        )  # Estou ignorando o caso neutro a principio
     return bear_bull
 
 

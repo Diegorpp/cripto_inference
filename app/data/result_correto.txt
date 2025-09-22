@@ -1,0 +1,412 @@
+Text: BTC breaking $100k before Christmas! Mark my words
+Status Code: 200
+Response: {"target_type":"target_price","post_text":"BTC breaking $100k before Christmas! Mark my words","extracted_value":{"asset":"BTC","price":100000.0,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"O tweet é otimista sobre o preço do BTC.\nPrevisão de preço é de $100k.\nPrazo é antes do Natal."}
+
+Text: Ethereum will crash to $800 within the next 6 months
+Status Code: 200
+Response: {"target_type":"target_price","post_text":"Ethereum will crash to $800 within the next 6 months","extracted_value":{"asset":"Ethereum","price":800.0,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Previsão de queda do Ethereum para $800.\nPrazo de 6 meses.\nSentimento bear."}
+
+Text: Solana $SOL rejected again. Buy the dip at $176 or the breakout at $207. Target stays $300.
+Status Code: 200
+Response: {"target_type":"target_price","post_text":"Solana $SOL rejected again. Buy the dip at $176 or the breakout at $207. Target stays $300.","extracted_value":{"asset":"SOL","price":176.0,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Características do tweet:\n\n* Previsão de compra\n* Preço de entrada: $176 (compra no dip) ou $207 (quebra de resistência)\n* Preço-alvo: $300\n* Moeda: Solana ($SOL)\n* Sentimento: neutro/bullish (compra no dip ou quebra de resistência)"}
+
+Text: $SOL will soon regain its bullish momentum? Looking to buy a lot if it dips to an OB/BPR level around $182. According to the LTF confirmations we get, this would be a good buying area. Eyes open
+Status Code: 200
+Response: {"target_type":"target_price","post_text":"$SOL will soon regain its bullish momentum? Looking to buy a lot if it dips to an OB/BPR level around $182. According to the LTF confirmations we get, this would be a good buying area. Eyes open","extracted_value":{"asset":"SOL","price":182.0,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Análise de mercado otimista sobre $SOL.\nPrevisão de recuperação do momentum bullish.\nCompra prevista em $182.\nAvaliação baseada em confirmações de curto prazo."}
+
+Text: This time, ETHEREUM is coming to break $5,000 Believe in somETHing
+Status Code: 200
+Response: {"target_type":"target_price","post_text":"This time, ETHEREUM is coming to break $5,000 Believe in somETHing","extracted_value":{"asset":"ETH","price":5000.0,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"O tweet é bullish.\nPreço-alvo é $5.000.\nAtivo é Ethereum (ETH)."}
+
+Text: DOGE hitting $2.50 when my ex finally texts me back (never)
+Status Code: 200
+Response: {"target_type":"target_price","post_text":"DOGE hitting $2.50 when my ex finally texts me back (never)","extracted_value":{"asset":"DOGE","price":2.5,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"O tweet expressa ceticismo sobre o preço do DOGE atingir $2,50. \nNão há um objetivo de preço sério, apenas uma comparação irônica. \nO sentimento é bear (negativo) em relação ao preço. \nNão há um prazo específico mencionado. \nO tom é de humor e ironia."}
+
+Text: PEPE hitting $0.001 by Valentine's Day. Love is in the air and so are meme coins
+Status Code: 200
+Response: {"target_type":"target_price","post_text":"PEPE hitting $0.001 by Valentine's Day. Love is in the air and so are meme coins","extracted_value":{"asset":"PEPE","price":0.001,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Previsão de preço.\nMeta de valor para PEPE.\nPreço-alvo: $0.001.\nMoeda: PEPE.\nData limite: Dia dos Namorados."}
+
+Text: XRP going to zero. Absolutely worthless by summer
+Status Code: 200
+Response: {"target_type":"target_price","post_text":"XRP going to zero. Absolutely worthless by summer","extracted_value":{"asset":"XRP","price":null,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Tweet prever baixa do XRP para zero até o verão. Sentimento: bearista. Preço-alvo: zero dólares."}
+
+Text: ADA will touch $10 when my grandmother finally understands what blockchain is
+Status Code: 200
+Response: {"target_type":"target_price","post_text":"ADA will touch $10 when my grandmother finally understands what blockchain is","extracted_value":{"asset":"ADA","price":10.0,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Ironia no tweet sobre o preço da ADA.\nPreço alvo de $10 para a ADA.\nTono humorístico em relação à compreensão da blockchain."}
+
+Text: AVAX $200 EOY or I quit trading forever
+Status Code: 200
+Response: {"target_type":"target_price","post_text":"AVAX $200 EOY or I quit trading forever","extracted_value":{"asset":"AVAX","price":200.0,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Características do tweet: \n- Preço-alvo: $200\n- Ativo: AVAX\n- Prazo: Fim do ano (EOY)\n- Sentimento: Bullish (otimista)\n- Disposição: Apostar carreira em alta do ativo."}
+
+Text: Bitcoin flash crash to $15k incoming. Buy orders set
+Status Code: 200
+Response: {"target_type":"target_price","post_text":"Bitcoin flash crash to $15k incoming. Buy orders set","extracted_value":{"asset":"Bitcoin","price":15000.0,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Predição de baixa, mas sinal de compra."}
+
+Text: SHIB deleting three zeros. $0.01 is inevitable within 18 months
+Status Code: 200
+Response: {"target_type":"target_price","post_text":"SHIB deleting three zeros. $0.01 is inevitable within 18 months","extracted_value":{"asset":"SHIB","price":0.01,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"O tweet é otimista sobre o preço da SHIB. \nPrevisão de aumento para $0.01 em 18 meses. \nSentimento bullish."}
+
+Text: LINK $500 next cycle. Chainlink oracles will rule the world
+Status Code: 200
+Response: {"target_type":"target_price","post_text":"LINK $500 next cycle. Chainlink oracles will rule the world","extracted_value":{"asset":"LINK","price":500.0,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Tweet otimista sobre o preço do LINK. Preço-alvo de $500 mencionado. Sentimento bull."}
+
+Text: DOT to $3 if this bear market continues. Buckle up
+Status Code: 200
+Response: {"target_type":"target_price","post_text":"DOT to $3 if this bear market continues. Buckle up","extracted_value":{"asset":"DOT","price":3.0,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"O tweet é pessimista, prevê queda de preço da DOT. \nPrevisão de preço é de $3 para a DOT. \nMercado de ursos continua. \nTempo não especificado."}
+
+Text: MATIC hitting $5 during the next FIFA World Cup. Football season pump incoming
+Status Code: 200
+Response: {"target_type":"target_price","post_text":"MATIC hitting $5 during the next FIFA World Cup. Football season pump incoming","extracted_value":{"asset":"M","price":5.0,"currency":"USD"},"bear_bull":6.5016478300094604,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Previsão de alta para MATIC.\nPreço-alvo: $5.\nEvento: Copa do Mundo da FIFA.\nSentimento: Bullish."}
+
+Text: SOL back to $8. This Solana pump is fake
+Status Code: 200
+Response: {"target_type":"target_price","post_text":"SOL back to $8. This Solana pump is fake","extracted_value":{"asset":"SOL","price":8.0,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"O tweet expressa ceticismo sobre o aumento do preço da Solana (SOL). \nPreço-alvo é $8.\nSentimento é bear (vendedor)."}
+
+Text: UNI $50 when DeFi summer 2.0 hits. Mark this tweet
+Status Code: 200
+Response: {"target_type":"target_price","post_text":"UNI $50 when DeFi summer 2.0 hits. Mark this tweet","extracted_value":{"asset":"UNI","price":50.0,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Predição de preços, meta de preço. \nDeFi Summer 2.0 é o gatilho. \nPrevisão de alta. \nMoeda afetada: UNI. \nPreço-alvo: $50."}
+
+Text: ATOM $100 minimum this bull run. Cosmos ecosystem undervalued AF
+Status Code: 200
+Response: {"target_type":"target_price","post_text":"ATOM $100 minimum this bull run. Cosmos ecosystem undervalued AF","extracted_value":{"asset":"M","price":100.0,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Tweet otimista sobre o preço do ATOM. \nPreço alvo de $100. \nEcossistema Cosmos subvalorizado.\nAnálise bullish, sem prazo explícito."}
+
+Text: DOGE $2.50 by my birthday. Best gift ever would be financial freedom
+Status Code: 200
+Response: {"target_type":"target_price","post_text":"DOGE $2.50 by my birthday. Best gift ever would be financial freedom","extracted_value":{"asset":"DOGE","price":2.5,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"O tweet prevê alta no preço da DOGE.\nPreço-alvo é $2,50.\nPrazo é até o aniversário do usuário.\nSentimento é bullish."}
+
+Text: ETH $10k minimum during the next halving cycle. Layer 2s will drive this
+Status Code: 200
+Response: {"target_type":"target_price","post_text":"ETH $10k minimum during the next halving cycle. Layer 2s will drive this","extracted_value":{"asset":"ETH","price":10000.0,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Tweet otimista sobre preço do Ethereum. Preço mínimo previsto: $10k. \nInfluenciado pela próxima redução de recompensa (halving) e melhorias em Layer 2."}
+
+Text: ALGO dead coin. Maybe $0.05 if they're lucky
+Status Code: 200
+Response: {"target_type":"target_price","post_text":"ALGO dead coin. Maybe $0.05 if they're lucky","extracted_value":{"asset":"M","price":0.05,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Conotação negativa sobre o ALGO. \nPreço-alvo pessimista de $0.05. \nPredição de queda para o ALGO. \nOpinião bearish."}
+
+Text: SOL up 150% from current levels by end of Q1
+Status Code: 200
+Response: {"target_type":"pct_change","post_text":"SOL up 150% from current levels by end of Q1","extracted_value":{"asset":"SOL","percentage":150.0,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"O tweet indica um aumento de 150% no valor de SOL até o final do Q1.\nCaracterísticas:\n- Aumento de 150%.\n- Ativo: SOL.\n- Moeda: USD.\n- Previsão até o final do Q1."}
+
+Text: DOGE gonna lose 60% of its value. Meme coins are dead
+Status Code: 200
+Response: {"target_type":"pct_change","post_text":"DOGE gonna lose 60% of its value. Meme coins are dead","extracted_value":{"asset":"DOGE","percentage":60.0,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Tweet pessimista sobre DOGE. Previsão de perda de 60% do valor. \n Classificado como \"bear\" (ursos), indicando uma tendência de baixa. \n Não há um período de tempo específico mencionado."}
+
+Text: $ETH vs $BTC - 3W. Supertrend just flipped green. Last time this happened, Ethereum pumped +260% against Bitcoin.
+Status Code: 200
+Response: {"target_type":"pct_change","post_text":"$ETH vs $BTC - 3W. Supertrend just flipped green. Last time this happened, Ethereum pumped +260% against Bitcoin.","extracted_value":{"asset":"BTC","percentage":260.0,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"O tweet compara $ETH e $BTC, mencionando um aumento de 260% na última ocorrência. \nO contexto fornece mais detalhes sobre o aumento percentual. \nA comparação é em um gráfico de 3 semanas. \nO indicador Supertrend está verde, indicando tendência de alta."}
+
+Text: ADA will dump 80% before finding a bottom. Cardano ecosystem is failing
+Status Code: 200
+Response: {"target_type":"pct_change","post_text":"ADA will dump 80% before finding a bottom. Cardano ecosystem is failing","extracted_value":{"asset":"ADA","percentage":80.0,"currency":"USD"},"bear_bull":0.5818307399749756,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Textos são pessimistas sobre ADA.\nPrevisão de queda de 80%.\nEcosistema de Cardano é considerado fracassado."}
+
+Text: AVAX pumping 300% by summer. Avalanche is the ETH killer we've been waiting for
+Status Code: 200
+Response: {"target_type":"pct_change","post_text":"AVAX pumping 300% by summer. Avalanche is the ETH killer we've been waiting for","extracted_value":{"asset":"ETH","percentage":300.0,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"O tweet apresenta um tom otimista e previsão de alta para AVAX. \nAvalanche é apresentada como concorrente do Ethereum.\nA porcentagem de mudança mencionada é de 300%.\nA menção a \"ETH killer\" sugere que o usuário acredita que Avalanche pode superar Ethereum."}
+
+Text: SHIB gonna lose 90% of its value when the meme coin hype dies
+Status Code: 200
+Response: {"target_type":"pct_change","post_text":"SHIB gonna lose 90% of its value when the meme coin hype dies","extracted_value":{"asset":"SHIB","percentage":90.0,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Tweet é Bearish. \nPrevê perda de valor da SHIB. \nNão há data específica mencionada. \nA perda de valor é de 90%. \nA moeda mencionada é SHIB."}
+
+Text: LINK up 500% this cycle. Oracles are the backbone of DeFi
+Status Code: 200
+Response: {"target_type":"pct_change","post_text":"LINK up 500% this cycle. Oracles are the backbone of DeFi","extracted_value":{"asset":"LINK","percentage":500.0,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Características do tweet:\n\n* Aumento de 500% da moeda LINK.\n* Oracles são fundamentais para DeFi.\n* Tipo de post: mudança percentual.\n* Sentimento: bullish (0 indica aumento)."}
+
+Text: DOT will crash 70% in the next bear market. Polkadot narrative is dead
+Status Code: 200
+Response: {"target_type":"pct_change","post_text":"DOT will crash 70% in the next bear market. Polkadot narrative is dead","extracted_value":{"asset":"DOT","percentage":70.0,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"O tweet prevê uma queda de 70% no valor de DOT.\nÉ um sentimento bearish.\nO contexto confirma a previsão de queda."}
+
+Text: MATIC doubles from here by Q2 2025. Polygon zkEVM is the future
+Status Code: 200
+Response: {"target_type":"pct_change","post_text":"MATIC doubles from here by Q2 2025. Polygon zkEVM is the future","extracted_value":{"asset":"M","percentage":null,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Previsão de alta de 100% no preço do MATIC.\nPeríodo previsto: até Q2 2025.\nTecnologia citada: Polygon zkEVM.\nSentimento: Bullish."}
+
+Text: UNI down 50% minimum during next correction. DeFi is overvalued
+Status Code: 200
+Response: {"target_type":"pct_change","post_text":"UNI down 50% minimum during next correction. DeFi is overvalued","extracted_value":{"asset":"UNI","percentage":50.0,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Previsão de queda de 50% no valor de UNI.\nSentimento bearish.\nDeFi visto como superavaliado."}
+
+Text: ATOM exploding 400% when Cosmos IBC really takes off
+Status Code: 200
+Response: {"target_type":"pct_change","post_text":"ATOM exploding 400% when Cosmos IBC really takes off","extracted_value":{"asset":"M","percentage":400.0,"currency":"BRL"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"O tweet prevê alta de 400% do ATOM.\nO contexto indica uma possível mudança percentual de 400%.\nA alta está relacionada ao Cosmos IBC."}
+
+Text: ALGO bleeding another 60%. This project is going nowhere
+Status Code: 200
+Response: {"target_type":"pct_change","post_text":"ALGO bleeding another 60%. This project is going nowhere","extracted_value":{"asset":"ALGO","percentage":60.0,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Tema: queda do valor de ALGO.\nTom: negativo.\nIndicador: perda de 60%.\nSentimento: bear (urso)."}
+
+Text: XRP might pump 200% if they win the SEC case next year
+Status Code: 200
+Response: {"target_type":"pct_change","post_text":"XRP might pump 200% if they win the SEC case next year","extracted_value":{"asset":"XRP","percentage":200.0,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":true,"start":"2024-12-01T00:00:00+00:00","end":"2025-12-01T00:00:00+00:00"},"notes":"Características do tweet: \n- Previsão de alta de 200% do XRP.\n- Condição: vitória no caso contra a SEC.\n- Período: ano seguinte (2024-2025).\n- Ótimo para compradores (bull)."}
+
+Text: NEAR dropping 40% before finding support. Layer 1s are struggling
+Status Code: 200
+Response: {"target_type":"pct_change","post_text":"NEAR dropping 40% before finding support. Layer 1s are struggling","extracted_value":{"asset":"NEAR","percentage":40.0,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Tweet menciona queda de 40% da moeda NEAR.\nMenção à dificuldade de Layer 1s.\nValor extraído confirma queda de 40%."}
+
+Text: FTM will 10x from current levels. Fantom Opera is underrated
+Status Code: 200
+Response: {"target_type":"pct_change","post_text":"FTM will 10x from current levels. Fantom Opera is underrated","extracted_value":{"asset":"M","percentage":null,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Previsão de alta no valor da FTM.\nSentimento bull.\nFantom Opera é subestimada."}
+
+Text: LTC losing 30% more before halving pump kicks in
+Status Code: 200
+Response: {"target_type":"pct_change","post_text":"LTC losing 30% more before halving pump kicks in","extracted_value":{"asset":"LTC","percentage":30.0,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Características do tweet:\n\n* Previsão de perda\n* Porcentagem de perda: 30%\n* Ativo afetado: LTC\n* Sentimento: bear (medo de perda) \n* Foco em evento: halving pump."}
+
+Text: APT gonna moon 600% this bull run. Aptos Move language is revolutionary
+Status Code: 200
+Response: {"target_type":"pct_change","post_text":"APT gonna moon 600% this bull run. Aptos Move language is revolutionary","extracted_value":{"asset":"APT","percentage":600.0,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"O tweet é otimista sobre o preço da moeda APT.\nPrevisão de alta de 600% no valor da APT.\nO texto destaca a linguagem Move como revolucionária."}
+
+Text: ICP will retrace 85% to pre-launch levels. Internet Computer was overhyped
+Status Code: 200
+Response: {"target_type":"pct_change","post_text":"ICP will retrace 85% to pre-launch levels. Internet Computer was overhyped","extracted_value":{"asset":"ICP","percentage":85.0,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Preço da ICP cairá 85%. Previsão pessimista sobre o Internet Computer."}
+
+Text: SAND up 250% when metaverse hype returns in 2025
+Status Code: 200
+Response: {"target_type":"pct_change","post_text":"SAND up 250% when metaverse hype returns in 2025","extracted_value":{"asset":"S","percentage":250.0,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"O tweet prevê alta de 250% na moeda SAND em 2025. \nA análise identifica uma mudança percentual de 250%.\nO tweet é neutro, com bear_bull=0, sem posição clara de compra ou venda. \nO prazo é implícito, sem data específica, apenas 2025."}
+
+Text: VET bleeding 45% more. VeChain partnerships don't mean anything anymore
+Status Code: 200
+Response: {"target_type":"pct_change","post_text":"VET bleeding 45% more. VeChain partnerships don't mean anything anymore","extracted_value":{"asset":"VET","percentage":45.0,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Tweet é bearish.\nMenciona perda de 45% do VET.\nDesvaloriza parcerias da VeChain."}
+
+Text: BTC will trade between 45k-55k throughout 2025
+Status Code: 200
+Response: {"target_type":"range","post_text":"BTC will trade between 45k-55k throughout 2025","extracted_value":{"asset":"BTC","min":null,"max":null,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Contraste: \n- Target não explícito.\n- Falta informações sobre mínima e máxima. \n- Prazo implícito no ano de 2025. \n- Não indica tendência de urso ou touro."}
+
+Text: ETH consolidation zone: $2800-$3200 next month
+Status Code: 200
+Response: {"target_type":"range","post_text":"ETH consolidation zone: $2800-$3200 next month","extracted_value":{"asset":"ETH","min":2800.0,"max":3200.0,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":true,"start":"2024-11-25T10:30:00+00:00","end":"2024-12-25T10:30:00+00:00"},"notes":"Características do tweet: \n- Moeda: ETH\n- Tipo de previsão: Faixa de consolidação\n- Valor mínimo: $2800\n- Valor máximo: $3200\n- Período: próximo mês."}
+
+Text: Tom Lee just said he thinks Ethereum $ETH could hit $5,500 in the near term and end the year at $10,000-$12,000
+Status Code: 200
+Response: {"target_type":"range","post_text":"Tom Lee just said he thinks Ethereum $ETH could hit $5,500 in the near term and end the year at $10,000-$12,000","extracted_value":{"asset":"ETH","min":10000.0,"max":12000.0,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"O tweet é otimista sobre o preço do Ethereum.\nO alvo de preço é uma faixa de $10,000-$12,000.\nTom Lee é o especialista citado.\nO prazo é de curto prazo e fim do ano."}
+
+Text: SOL gonna crab between $180-$220 until my ex stops liking my Instagram stories which could be anywhere from 3 days to 3 years
+Status Code: 200
+Response: {"target_type":"range","post_text":"SOL gonna crab between $180-$220 until my ex stops liking my Instagram stories which could be anywhere from 3 days to 3 years","extracted_value":{"asset":"SOL","min":180.0,"max":220.0,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Tuit contém previsão de preço da criptomoeda SOL. Preço pode variar entre $180 e $220. \n\nTuit contém informações não relacionadas à criptomoeda, como ex-namorada e histórias do Instagram. \n\nTuit apresenta tom humorístico. Não fornece uma data específica para a previsão."}
+
+Text: ADA trapped in hell between $0.30-$0.45 forever or until Charles stops making videos about Africa whichever comes first lmao
+Status Code: 200
+Response: {"target_type":"range","post_text":"ADA trapped in hell between $0.30-$0.45 forever or until Charles stops making videos about Africa whichever comes first lmao","extracted_value":{"asset":"ADA","min":0.3,"max":0.45,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Tweet tem tom sarcástico e crítico. \nPrevisão de preço é pessimista. \nAlvo é o preço da moeda ADA. \nFaixa de preço é entre $0,30 e $0,45. \nNão há prazo específico para o evento. \nMenciona a paralisação de Charles com vídeos sobre África. \nTom é de descrença e zombaria."}
+
+Text: DOGE will oscillate between 0.08-0.32 cents following Elon's mood swings. When he's happy dogs pump when he's sad they dump it's science
+Status Code: 200
+Response: {"target_type":"range","post_text":"DOGE will oscillate between 0.08-0.32 cents following Elon's mood swings. When he's happy dogs pump when he's sad they dump it's science","extracted_value":{"asset":"DOGE","min":0.08,"max":0.32,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Características identificadas:\n\n* Previsão de oscilação do DOGE.\n* Intervalo de preço definido (0.08-0.32 cents).\n* Influência atribuída a Elon Musk.\n* Tom de ironia ou humor (\"it's science\")."}
+
+Text: LINK marines we're stuck in $6.50-$8.20 purgatory until the next bull run or until my wife understands what an oracle is (never)
+Status Code: 200
+Response: {"target_type":"range","post_text":"LINK marines we're stuck in $6.50-$8.20 purgatory until the next bull run or until my wife understands what an oracle is (never)","extracted_value":{"asset":"LINK","min":6.5,"max":8.2,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"O tweet é cínico e brincalhão.\nO autor está frustrado com o preço do LINK.\nHá uma referência à esposa, indicando humor.\nO autor duvida de uma alta no preço até o próximo ciclo bull."}
+
+Text: AVAX consolidating $24-$31 but only on Tuesdays when Mercury isn't in retrograde and my horoscope says buy the dip
+Status Code: 200
+Response: {"target_type":"range","post_text":"AVAX consolidating $24-$31 but only on Tuesdays when Mercury isn't in retrograde and my horoscope says buy the dip","extracted_value":{"asset":"AVAX","min":24.0,"max":31.0,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Conteúdo do tweet é mais informal e inclui elementos de astrologia. \nContexto é mais técnico e focado em dados de mercado. \nTweet menciona dia específico (terça-feira) e astrologia. \nContexto se concentra em faixa de preços do ativo AVAX."}
+
+Text: XRP will chop between $0.45-$0.65 in this range until SEC guy gets tired of playing games or my pizza arrives whichever is sooner
+Status Code: 200
+Response: {"target_type":"range","post_text":"XRP will chop between $0.45-$0.65 in this range until SEC guy gets tired of playing games or my pizza arrives whichever is sooner","extracted_value":{"asset":"XRP","min":0.45,"max":0.65,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Características do tweet: \n- Previsão de preço XRP.\n- Intervalo de preço: $0.45-$0.65.\n- Referência à SEC e ao mercado de criptomoedas.\n- Tom humorístico."}
+
+Text: MATIC stuck between $0.70-$0.90 forever because polygon rhymes with gone and that's bearish energy ser ngmi if you hold
+Status Code: 200
+Response: {"target_type":"range","post_text":"MATIC stuck between $0.70-$0.90 forever because polygon rhymes with gone and that's bearish energy ser ngmi if you hold","extracted_value":{"asset":"M","min":0.7,"max":0.9,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"O tweet apresenta uma análise bearish de curto prazo para a criptomoeda MATIC. \nO preço está entre $0,70 e $0,90. \nA análise não é baseada em fundamentos técnicos, mas em uma brincadeira com palavras. \nO tom é de alerta, sugerindo que manter a criptomoeda pode ser arriscado."}
+
+Text: UNI dancing between $4.80-$6.20 until DeFi summer 2.0 hits or my mom stops asking if I won the lottery yet (spoiler: I didn't)
+Status Code: 200
+Response: {"target_type":"range","post_text":"UNI dancing between $4.80-$6.20 until DeFi summer 2.0 hits or my mom stops asking if I won the lottery yet (spoiler: I didn't)","extracted_value":{"asset":"UNI","min":4.8,"max":6.2,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Características do tweet:\n\n- Previsão de faixa de preço para UNI.\n- Menção ao \"DeFi summer 2.0\".\n- Tom humorístico.\n- Uso de metáfora (\"dancing\").\n- Referência pessoal."}
+
+Text: DOT gonna sideways crab $4.10-$5.90 because my magic 8 ball said 'reply hazy try again' and that's basically range bound advice
+Status Code: 200
+Response: {"target_type":"range","post_text":"DOT gonna sideways crab $4.10-$5.90 because my magic 8 ball said 'reply hazy try again' and that's basically range bound advice","extracted_value":{"asset":"DOT","min":4.1,"max":5.9,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Tweet refere-se à moeda DOT.\nValor de $4.10 a $5.90.\nAções podem permanecer estáveis."}
+
+Text: ATOM trapped between $7.80-$10.20 in the cosmos void until IBC actually does something or heat death of universe
+Status Code: 200
+Response: {"target_type":"range","post_text":"ATOM trapped between $7.80-$10.20 in the cosmos void until IBC actually does something or heat death of universe","extracted_value":{"asset":"M","min":7.8,"max":10.2,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"O tweet cita ATOM preso entre $7,80-$10,20.\nO contexto apresenta um intervalo de valor para ATOM de $7,80 a $10,20.\nO tom do tweet é neutro, bear_bull=0.\nNão há prazo específico mencionado no tweet.\nO tweet apresenta uma linguagem criativa e metafórica."}
+
+Text: ALGO range bound $0.12-$0.18 until they fix their tokenomics or my therapist says I'm cured of hopium addiction
+Status Code: 200
+Response: {"target_type":"range","post_text":"ALGO range bound $0.12-$0.18 until they fix their tokenomics or my therapist says I'm cured of hopium addiction","extracted_value":{"asset":"ALGO","min":0.12,"max":0.18,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Tweet menciona range de preço para ALGO.\nConteúdo do tweet é irônico e crítico.\nValor mínimo e máximo mencionados são $0.12 e $0.18.\nMoeda mencionada é ALGO.\nContexto inclui extrair valor de range.\nSentimento do tweet é bear (urso), ou seja, pessimista."}
+
+Text: FTM oscillating $0.25-$0.40 like a ghost that can't decide if it wants to haunt this portfolio or move on to crypto heaven
+Status Code: 200
+Response: {"target_type":"range","post_text":"FTM oscillating $0.25-$0.40 like a ghost that can't decide if it wants to haunt this portfolio or move on to crypto heaven","extracted_value":{"asset":"M","min":0.25,"max":0.4,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"O tweet menciona a moeda FTM.\nValores de $0.25 a $0.40.\nComparação com um fantasma.\nNeutro, nem otimista nem pessimista."}
+
+Text: NEAR chopping between $1.20-$1.80 until they rebrand to FAR or my landlord accepts crypto rent payments (he won't)
+Status Code: 200
+Response: {"target_type":"range","post_text":"NEAR chopping between $1.20-$1.80 until they rebrand to FAR or my landlord accepts crypto rent payments (he won't)","extracted_value":{"asset":"NEAR","min":1.2,"max":1.8,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Tweet apresenta tom humorístico e sarcástico. \nMenciona faixa de preço para NEAR.\nRebrand não parece estar relacionado à análise de mercado. \nMenção ao pagamento de aluguel em criptomoeda é ironia. \nO contexto confirma a análise da faixa de preço ($1.20-$1.80) sem explicitar o tempo. \nSentimento bear/bull é neutro."}
+
+Text: LTC grinding between $68-$88 because it's digital silver but silver is boring and Charlie Lee sold the top that one time
+Status Code: 200
+Response: {"target_type":"range","post_text":"LTC grinding between $68-$88 because it's digital silver but silver is boring and Charlie Lee sold the top that one time","extracted_value":{"asset":"LTC","min":68.0,"max":88.0,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Tweet apresenta:\n- Preço de LTC entre $68-$88.\n- Comparação com prata.\n- Menção à venda de Charlie Lee no pico.\n- Tom informal e humorístico."}
+
+Text: SOL gonna crab between $180-$220 until my ex stops liking my Instagram stories which should be by Valentine's Day 2025 hopefully
+Status Code: 200
+Response: {"target_type":"range","post_text":"SOL gonna crab between $180-$220 until my ex stops liking my Instagram stories which should be by Valentine's Day 2025 hopefully","extracted_value":{"asset":"SOL","min":180.0,"max":220.0,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Texto é uma previsão de preço da criptomoeda SOL.\nPreço previsto está entre $180-$220.\nData limite é o Dia dos Namorados de 2025.\nO tom é informal e pessoal."}
+
+Text: DOGE will oscillate between 0.08-0.32 cents following Elon's mood swings throughout Q2 2025 when Tesla earnings come out
+Status Code: 200
+Response: {"target_type":"range","post_text":"DOGE will oscillate between 0.08-0.32 cents following Elon's mood swings throughout Q2 2025 when Tesla earnings come out","extracted_value":{"asset":"DOGE","min":0.08,"max":0.32,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Características do tweet:\n\n- Previsão de variação do preço do DOGE.\n- Influenciado pelo humor de Elon Musk.\n- Período específico: Q2 2025.\n- Relacionado às declarações de lucros da Tesla."}
+
+Text: XRP will chop between $0.45-$0.65 until the SEC case resolves by end of summer 2025 or my pizza arrives whichever is sooner
+Status Code: 200
+Response: {"target_type":"range","post_text":"XRP will chop between $0.45-$0.65 until the SEC case resolves by end of summer 2025 or my pizza arrives whichever is sooner","extracted_value":{"asset":"XRP","min":0.45,"max":0.65,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"O tweet apresenta análise de previsão de preço da moeda XRP. \nPreço previsto: $0.45-$0.65.\nFator de influência: SEC case.\nPrazo estimado: fim do verão de 2025."}
+
+Text: AVAX will be top 5 by market cap this bull run
+Status Code: 200
+Response: {"target_type":"ranking","post_text":"AVAX will be top 5 by market cap this bull run","extracted_value":{"asset":"AVAX","ranking":5,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Características do tweet: \n\n* Previsão de mercado\n* Positiva (bull run)\n* Específica (top 5)\n* Curto prazo (sem data específica) \n* Foco em AVAX"}
+
+Text: LINK dropping out of top 20 soon
+Status Code: 200
+Response: {"target_type":"ranking","post_text":"LINK dropping out of top 20 soon","extracted_value":{"asset":"LINK","ranking":20,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Previsão de queda do LINK no ranking.\nSentimento bearish.\nFoco no preço em USD."}
+
+Text: PEPE gonna crack top 10 by market cap when normies discover memes are the future
+Status Code: 200
+Response: {"target_type":"ranking","post_text":"PEPE gonna crack top 10 by market cap when normies discover memes are the future","extracted_value":{"asset":"PEPE","ranking":10,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"O tweet é otimista sobre o futuro da criptomoeda PEPE.\nPrevê que PEPE entrará no top 10 em capitalização de mercado.\nNão há data específica para essa previsão.\nO tom é de confiança e otimismo."}
+
+Text: SOL will flip ETH and become #2 crypto by end of 2025 mark my words
+Status Code: 200
+Response: {"target_type":"ranking","post_text":"SOL will flip ETH and become #2 crypto by end of 2025 mark my words","extracted_value":{"asset":"ETH","ranking":null,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Predição ousada. \nSOL pode ultrapassar ETH. \nPrevisão para o fim de 2025. \nOpinião bullística. \nFoco em ranking cripto. \nSOL é a criptomoeda mencionada. \nETH é a criptomoeda comparada. \nPrazo definido: fim de 2025. \nSentimento positivo em relação ao SOL."}
+
+Text: ADA falling out of top 15 soon. Cardano hype is dead and buried
+Status Code: 200
+Response: {"target_type":"ranking","post_text":"ADA falling out of top 15 soon. Cardano hype is dead and buried","extracted_value":{"asset":"ADA","ranking":15,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"O tweet é bearish sobre o ADA. \nPrevisão do ADA saindo do top 15. \nHype do Cardano considerado morto."}
+
+Text: DOGE will be the most valuable cryptocurrency in the universe when Elon colonizes Mars
+Status Code: 200
+Response: {"target_type":"none","post_text":"DOGE will be the most valuable cryptocurrency in the universe when Elon colonizes Mars","extracted_value":null,"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Características do tweet: \n- Exagero e ironia sobre o futuro da criptomoeda DOGE. \n- Referência a Elon Musk e colonização de Marte. \n- Tom otimista e entusiástico, porém sem fundamentos concretos. \n- Não há uma previsão de tempo específica. \n- Parece mais uma opinião humorística do que uma análise de mercado séria."}
+
+Text: XRP will be worth $589 per coin and rank #1 globally
+Status Code: 200
+Response: {"target_type":"none","post_text":"XRP will be worth $589 per coin and rank #1 globally","extracted_value":null,"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"O tweet é otimista sobre XRP.\nPreço previsto é alto ($589).\nRanking previsto é #1. \nO contexto confirma o otimismo."}
+
+Text: MATIC dropping to #25 by market cap. Polygon is getting rekt by competition
+Status Code: 200
+Response: {"target_type":"ranking","post_text":"MATIC dropping to #25 by market cap. Polygon is getting rekt by competition","extracted_value":{"asset":"M","ranking":null,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Tweet negativo sobre MATIC.\nPrevisão de queda no ranking.\nTônica crítica em relação à Polygon."}
+
+Text: SHIB will never break top 50 ever again. Meme season is over forever
+Status Code: 200
+Response: {"target_type":"none","post_text":"SHIB will never break top 50 ever again. Meme season is over forever","extracted_value":null,"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"O tweet apresenta uma visão negativa sobre o futuro do SHIB. \nÉ uma previsão pessimista e não há um período de tempo definido. \nNão há valor extraído para análise. \nO sentimento é bearish (urso)."}
+
+Text: ATOM will be top 3 DeFi coin by summer when Cosmos IBC goes mainstream
+Status Code: 200
+Response: {"target_type":"ranking","post_text":"ATOM will be top 3 DeFi coin by summer when Cosmos IBC goes mainstream","extracted_value":{"asset":"M","ranking":3,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"O tweet é otimista sobre o ATOM.\nPrevisão de classificação: top 3.\nPrazo: verão.\nCondição: quando Cosmos IBC se tornar mainstream."}
+
+Text: UNI falling to #30 because DeFi is dead and everyone moved to meme coins
+Status Code: 200
+Response: {"target_type":"ranking","post_text":"UNI falling to #30 because DeFi is dead and everyone moved to meme coins","extracted_value":{"asset":"UNI","ranking":null,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Tweet negativo sobre UNI, culpa a morte do DeFi e migração para moedas de meme. \nIndica uma tendência de baixa para o ativo. \nNão há um período de tempo específico mencionado. \nO tom é de desconfiança e pessimismo em relação ao mercado DeFi."}
+
+Text: DOT will be the king of Layer 0s and reach top 8 this cycle
+Status Code: 200
+Response: {"target_type":"ranking","post_text":"DOT will be the king of Layer 0s and reach top 8 this cycle","extracted_value":{"asset":"DOT","ranking":8,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"O tweet é otimista sobre o futuro do DOT. \nCaracterísticas do tweet: previsão de crescimento, comparação com outros ativos. \nBullish para o DOT. \nPrevisão de ranking no top 8. \nNão há menção a prazos específicos. \nFoco em Layer 0s."}
+
+Text: NEAR Protocol gonna be #1 developer platform beating Ethereum by 2026
+Status Code: 200
+Response: {"target_type":"ranking","post_text":"NEAR Protocol gonna be #1 developer platform beating Ethereum by 2026","extracted_value":{"asset":"NEAR","ranking":null,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Predição otimista sobre NEAR superar Ethereum. \nConfiança no potencial de desenvolvimento de NEAR. \nPrevisão para 2026. \nCitação direta de ranking. \nNão fornece dados técnicos. \nNão menciona riscos ou incertezas. \nFoco em superar Ethereum. \nVisão de longo prazo. \nOtomatismo na previsão."}
+
+Text: FTM will never see top 100 again. Fantom is a ghost chain literally and figuratively
+Status Code: 200
+Response: {"target_type":"none","post_text":"FTM will never see top 100 again. Fantom is a ghost chain literally and figuratively","extracted_value":null,"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Tweet pessimista sobre FTM.\nPrediz queda fora do top 100.\nDescreve Fantom como \"cadeia fantasma\". \nTom bear (urso), indicando visão negativa."}
+
+Text: ALGO will be top 12 when they finally fix their tokenomics disaster
+Status Code: 200
+Response: {"target_type":"ranking","post_text":"ALGO will be top 12 when they finally fix their tokenomics disaster","extracted_value":{"asset":"ALGO","ranking":12,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Características do tweet:\n\n- Sentimento: Neutro/Bear\n- Previsão: Positiva a longo prazo\n- Crítica: Tokenomics do ALGO\n- Metas: Top 12 ranking"}
+
+Text: VET will flip LINK and enter top 18 when China unbans crypto
+Status Code: 200
+Response: {"target_type":"ranking","post_text":"VET will flip LINK and enter top 18 when China unbans crypto","extracted_value":{"asset":"LINK","ranking":18,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Predição de ranking.\nMudança na classificação da moeda.\nInfluência da China no mercado.\nComparação entre VET e LINK."}
+
+Text: ICP will pump 500% and reach top 20 by market cap next year
+Status Code: 200
+Response: {"target_type":"ranking","post_text":"ICP will pump 500% and reach top 20 by market cap next year","extracted_value":{"asset":"ICP","ranking":20,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":true,"start":"2024-12-01T00:00:00+00:00","end":"2025-12-01T00:00:00+00:00"},"notes":"O tweet faz uma previsão otimista sobre o preço da ICP.\nO usuário está citando um aumento de 500% e entrada no top 20.\nA previsão é para o próximo ano, a partir de 2024.\nO alvo é alcançar o 20º lugar por mercado de capitalização."}
+
+Text: LTC will be #15 by market cap during next halving cycle. Digital silver narrative returns
+Status Code: 200
+Response: {"target_type":"ranking","post_text":"LTC will be #15 by market cap during next halving cycle. Digital silver narrative returns","extracted_value":{"asset":"LTC","ranking":null,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Previsão de ranking de mercado.\nPreço do LTC pode aumentar.\nNarrativa de prata digital. \nMeta de ranking."}
+
+Text: APT will be the Solana killer and reach top 6 by market cap this bull run
+Status Code: 200
+Response: {"target_type":"ranking","post_text":"APT will be the Solana killer and reach top 6 by market cap this bull run","extracted_value":{"asset":"APT","ranking":6,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Tweet prevê APT superando Solana, alcançando top 6 em capitalização."}
+
+Text: SAND will be #1 gaming crypto when metaverse hype returns in 2025
+Status Code: 200
+Response: {"target_type":"ranking","post_text":"SAND will be #1 gaming crypto when metaverse hype returns in 2025","extracted_value":{"asset":"S","ranking":null,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Tweet prediz SAND como #1 cripto de jogos em 2025. \nContexto indica previsão de classificação, mas sem ranking específico.\nOpinião é otimista, tipo touro, sobre SAND em longo prazo."}
+
+Text: Crypto markets are so unpredictable right now. Nobody knows what's happening
+Status Code: 200
+Response: {"target_type":"none","post_text":"Crypto markets are so unpredictable right now. Nobody knows what's happening","extracted_value":null,"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"O tweet expressa incerteza sobre o mercado de criptomoedas. \nNão há um tempo específico mencionado.\nNão há valores ou dados concretos fornecidos.\nO sentimento é de neutralidade ou medo."}
+
+Text: HODL strong everyone! Diamond hands will be rewarded
+Status Code: 200
+Response: {"target_type":"none","post_text":"HODL strong everyone! Diamond hands will be rewarded","extracted_value":null,"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Tema: criptomoedas.\nTom: Otimista.\nJargão: \"HODL\", \"Diamond hands\".\nPrevisão: Positiva."}
+
+Text: HODL strong everyone! Diamond hands will be rewarded
+Status Code: 200
+Response: {"target_type":"none","post_text":"HODL strong everyone! Diamond hands will be rewarded","extracted_value":null,"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Tweet é positivo e otimista.\nUsa termos comuns em criptomoedas: \"HODL\" e \"diamond hands\".\nNão menciona prazos ou metas específicas.\nTonalidade é de encorajamento e motivação.\nÉ de natureza bullish, apesar de bear_bull ser 0."}
+
+Text: It's become contrarian to hold $SOL again. We all know how this ends.
+Status Code: 200
+Response: {"target_type":"none","post_text":"It's become contrarian to hold $SOL again. We all know how this ends.","extracted_value":null,"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Características do tweet:\nTom contrarianista.\nReferência à moeda $SOL.\nTom otimista com base no histórico."}
+
+Text: $sol vs $btc still some room down but monthly SFP clear shows reversal in the making #solana
+Status Code: 200
+Response: {"target_type":"none","post_text":"$sol vs $btc still some room down but monthly SFP clear shows reversal in the making #solana","extracted_value":null,"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Análise do tweet: \n- Moeda: Solana ($SOL)\n- Comparação: Bitcoin ($BTC)\n- Previsão: reversão em andamento\n- Tendência: neutra (bear_bull=0)\n- Período: mensal \n- Indicador: SFP (Signals For Prediction) limpo."}
+
+Text: We got a 4H inside bar on SOL and a 4H candle w no bottom wick Decent chance we take out yday's low before a proper bounce imo... one of these two
+Status Code: 200
+Response: {"target_type":"range","post_text":"We got a 4H inside bar on SOL and a 4H candle w no bottom wick Decent chance we take out yday's low before a proper bounce imo... one of these two","extracted_value":{"asset":"SOL","min":null,"max":null,"currency":"USD"},"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Características do tweet: \n- Análise técnica.\n- Moeda: SOL.\n- Período: 4 horas.\n- Possível queda antes de subir.\n- Opinião do autor: neutra (50/50)."}
+
+Text: $BTC is now at a very crucial level. If this level holds, BTC could see a reversal. Otherwise, the dump could be severe.
+Status Code: 200
+Response: {"target_type":"none","post_text":"$BTC is now at a very crucial level. If this level holds, BTC could see a reversal. Otherwise, the dump could be severe.","extracted_value":null,"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Não há muitas informações adicionais no contexto.\nO tweet expressa incerteza sobre o preço do BTC.\nNão há um alvo claro ou uma previsão específica.\nO tom é neutro, sem inclinação clara para bear ou bull."}
+
+Text: JUST IN: BlackRock sent 10K $BTC to 40 different wallets! Why are they doing this, and what does it mean for Bitcoin? I scanned all 40 wallets, studied everything, and was shocked. Here's what it means and what's happening behind the scenes
+Status Code: 200
+Response: {"target_type":"none","post_text":"JUST IN: BlackRock sent 10K $BTC to 40 different wallets! Why are they doing this, and what does it mean for Bitcoin? I scanned all 40 wallets, studied everything, and was shocked. Here's what it means and what's happening behind the scenes","extracted_value":null,"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"O tweet é sobre BlackRock enviando 10K $BTC para 40 carteiras diferentes, causando especulação sobre o que isso significa para o Bitcoin. A linguagem usada é sensacionalista eintrigante. O contexto não fornece informações adicionais. O tom é neutro/bulish."}
+
+Text: New $DOGE ATH is imminent imo
+Status Code: 200
+Response: {"target_type":"none","post_text":"New $DOGE ATH is imminent imo","extracted_value":null,"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"O tweet apresenta um sentimento bull (otimista). \nPrevisão de alta para $DOGE.\nNão há um prazo específico estabelecido."}
+
+Text: Another boring sideways day in crypto. Nothing moves except my anxiety.
+Status Code: 200
+Response: {"target_type":"none","post_text":"Another boring sideways day in crypto. Nothing moves except my anxiety.","extracted_value":null,"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Tweet expressa frustração com estabilidade do mercado de criptomoedas. \nSentimento do usuário é neutro/negativo. \nNão há menção a uma moeda específica ou tendência de mercado."}
+
+Text: Whales are just playing with retail. Same game, different day.
+Status Code: 200
+Response: {"target_type":"none","post_text":"Whales are just playing with retail. Same game, different day.","extracted_value":null,"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"O tweet expressa ceticismo sobre a influência dos \"whales\" no mercado. \nÉ uma crítica ao comportamento dos investidores institucionais. \nO tom é negativo e cínico. \nNão há previsão ou recomendação específica. \nO sentimento é Bear."}
+
+Text: Macro still controls everything. Until the Fed pivots, nothing matters.
+Status Code: 200
+Response: {"target_type":"none","post_text":"Macro still controls everything. Until the Fed pivots, nothing matters.","extracted_value":null,"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"O tweet é bearish. \nContexto técnico e macroeconômico.\nInfluência da Fed nos preços. \nVisão pessimista do mercado. \nAté a Fed mudar, nada importa."}
+
+Text: Crypto Twitter is euphoric again. Usually not a good sign.
+Status Code: 200
+Response: {"target_type":"none","post_text":"Crypto Twitter is euphoric again. Usually not a good sign.","extracted_value":null,"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"O tweet expressa ceticismo. \nNão há um alvo específico. \nSentimento bear. \nSem timeframe definido."}
+
+Text: The chart looks like it wants to go up, but also like it wants to go down. Classic.
+Status Code: 200
+Response: {"target_type":"none","post_text":"The chart looks like it wants to go up, but also like it wants to go down. Classic.","extracted_value":null,"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"O tweet expressa indecisão sobre tendência do mercado. \nCaracterísticas: Neutro, Incerto e Irônico."}
+
+Text: Bullish divergence on the RSI but volume is dead. Mixed signals everywhere.
+Status Code: 200
+Response: {"target_type":"none","post_text":"Bullish divergence on the RSI but volume is dead. Mixed signals everywhere.","extracted_value":null,"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Características do tweet: \nDivergência bullish no RSI, volume baixo, sinais mistos. \nConclusão: análise técnica de mercado de criptomoedas com indicadores de tendência contraditórios."}
+
+Text: This looks like the calm before the storm… or maybe just calm forever.
+Status Code: 200
+Response: {"target_type":"none","post_text":"This looks like the calm before the storm… or maybe just calm forever.","extracted_value":null,"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Neutro, ambiguidade, incerteza."}
+
+Text: Altcoin season is always just around the corner, right?
+Status Code: 200
+Response: {"target_type":"none","post_text":"Altcoin season is always just around the corner, right?","extracted_value":null,"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Tweet cético sobre temporada de altcoins. \nContém ironia e questionamento. \nNão específica uma moeda. \nNeutro, nem otimista, nem pessimista. \nContexto não fornece informações adicionais. \nParece ser uma pergunta retórica."}
+
+Text: If I had a dollar for every time someone called the bottom, I'd have more than my portfolio is worth.
+Status Code: 200
+Response: {"target_type":"none","post_text":"If I had a dollar for every time someone called the bottom, I'd have more than my portfolio is worth.","extracted_value":null,"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"É um tweet cético sobre previsões de mercado.\nCaracterísticas: humor, ironia, ceticismo.\nSentimento: bearish."}
+
+Text: Market structure is holding… for now.
+Status Code: 200
+Response: {"target_type":"none","post_text":"Market structure is holding… for now.","extracted_value":null,"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"O tweet indica incerteza no mercado.\nNão há um alvo específico mencionado.\nO sentimento é neutro, nem urso nem touro.\nNão há um período de tempo definido."}
+
+Text: Feels like we're about to witness something big, but I have no idea what.
+Status Code: 200
+Response: {"target_type":"none","post_text":"Feels like we're about to witness something big, but I have no idea what.","extracted_value":null,"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Neutro, falta de informação concreta. \nSem indicador de tendência (bear/bull). \nNão apresenta valor ou timeframe específico."}
+
+Text: Everyone is bullish, which makes me bearish, which probably makes me wrong.
+Status Code: 200
+Response: {"target_type":"none","post_text":"Everyone is bullish, which makes me bearish, which probably makes me wrong.","extracted_value":null,"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"O tweet expressa ceticismo em relação ao mercado. \nO autor está bearish devido à bullish geral.\nÉ uma análise de mercado baseada em opinião e psicologia. \nHá uma dose de ironia e incerteza."}
+
+Text: Every dip looks like the last dip until it doesn't.
+Status Code: 200
+Response: {"target_type":"none","post_text":"Every dip looks like the last dip until it doesn't.","extracted_value":null,"bear_bull":0,"timeframe":{"explicit":false,"start":null,"end":null},"notes":"Tweet é sobre volatilidade no mercado.\nCaracterísticas: filosófica, breve e neutra.\nNão menciona criptomoeda específica."}
+

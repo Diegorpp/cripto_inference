@@ -9,49 +9,43 @@ import dateparser
 from datetime import datetime
 from typing import Literal
 from random import randint
-from src.schema import (
-    TargetPrice, PercentageChange, Range, Ranking,
-                        Timeframe, Output
-                        )
+from src.schema import TargetPrice, PercentageChange, Range, Ranking, Timeframe, Output
 
 TargetType = Literal["target_price", "pct_change", "range", "ranking", "none"]
 
 
-# Obtem a lista de ativos do CoinMarketCap. 
+# Obtem a lista de ativos do CoinMarketCap.
 def get_asset_list() -> list[str]:
     # Obtem a lista de ativos do CoinMarketCap
-    link = 'https://coinmarketcap.com/pt-br'
+    link = "https://coinmarketcap.com/pt-br"
     criptos = {}
 
     response = requests.get(link)
     html = response.text
-    soup = BeautifulSoup(html, 'html.parser')
-    tbody = soup.find('tbody')
-    get_all_tr = tbody.find_all('tr')
+    soup = BeautifulSoup(html, "html.parser")
+    tbody = soup.find("tbody")
+    get_all_tr = tbody.find_all("tr")
     for idx, tr in enumerate(get_all_tr):
-        get_all_td = tr.find_all('td')
+        get_all_td = tr.find_all("td")
         asset = get_all_td[2].text
         # Trata os casos basicos de ativos
-        coin_asset = ''.join(takewhile(lambda x: x.isupper(), asset[::-1]))
-        coin_name = asset[:-len(coin_asset)]
-        
-        if coin_name == '': # Pegar os casos pares.
+        coin_asset = "".join(takewhile(lambda x: x.isupper(), asset[::-1]))
+        coin_name = asset[: -len(coin_asset)]
+
+        if coin_name == "":  # Pegar os casos pares.
             if len(asset) % 2 == 0:
-                coin_asset = asset[len(asset)//2:]
-                coin_name = asset[:len(asset)//2]
-            else: # Pegar os casos impares
-                coin_asset = asset[len(asset)//2 + 1:]
-                coin_name = asset[:len(asset)//2 + 1]
+                coin_asset = asset[len(asset) // 2 :]
+                coin_name = asset[: len(asset) // 2]
+            else:  # Pegar os casos impares
+                coin_asset = asset[len(asset) // 2 + 1 :]
+                coin_name = asset[: len(asset) // 2 + 1]
         else:
             # Quando o ativo esta todo maiusculo
             coin_asset = coin_asset[::-1]
 
-        # TODO: Algumas coins ainda não ficaram com o nome certo.
         # TODO: Fiz apenas para as primeiras 100 moedas das 9450.
-        # breakpoint()
         criptos[coin_asset] = coin_name
     return criptos
-        # print(f'{coin_name}: {coin_asset}')
 
 
 def extract_asset(text: str, asset_list: list[str]) -> str | None:
@@ -81,25 +75,10 @@ def extract_numbers(text: str) -> List[Dict]:
             value = value.replace("k", "000")
         value = value.replace("$", "")
         results.append({"type": "price", "value": str(Decimal(value))})
-    # Definir a regra para qual valor deve ser considerado.
     return results
 
-    # # Percentuais (10%, +5.5%, -12%)
-    # pct_pattern = re.compile(r"[+-]?\d+(?:\.\d+)?%")
-    # for match in pct_pattern.findall(text):
-    #     results.append({"type": "percent", "value": match})
 
-    # # Ranges ($100 - $200, 10% - 15%)
-    # range_pattern = re.compile(r"(\$?\d+(?:,\d+)?(?:\.\d+)?)[\s-]+(\$?\d+(?:,\d+)?(?:\.\d+)?)")
-    # for low, high in range_pattern.findall(text):
-    #     results.append({
-    #         "type": "range",
-    #         "low": str(Decimal(low.replace("$", "").replace(",", ""))),
-    #         "high": str(Decimal(high.replace("$", "").replace(",", "")))
-    #     })
-
-
-# TODO: Função incompleta
+# TODO: Validar outra moedas no futuro
 def extract_currency(text: str) -> str | None:
     """
     Extrai a moeda de referência do texto.
@@ -108,7 +87,7 @@ def extract_currency(text: str) -> str | None:
     currency_map = {
         "usd": ["$", "usd", "dollar", "dólar"],
         "brl": ["brl", "real", "reais", "r$"],
-        "eur": ["eur", "euro", "€"]
+        "eur": ["eur", "euro", "€"],
     }
 
     text_lower = text.lower()
@@ -136,7 +115,9 @@ def extract_min_max(text: str) -> (float | None, float | None):
     Extrai valores mínimo e máximo de um range no texto.
     Retorna uma tupla (min, max) ou (None, None) se não encontrar.
     """
-    range_pattern = re.compile(r"(\$?\d+(?:,\d+)?(?:\.\d+)?)[\s-]+(\$?\d+(?:,\d+)?(?:\.\d+)?)")
+    range_pattern = re.compile(
+        r"(\$?\d+(?:,\d+)?(?:\.\d+)?)[\s-]+(\$?\d+(?:,\d+)?(?:\.\d+)?)"
+    )
     match = range_pattern.search(text)
     if match:
         low = float(match.group(1).replace("$", "").replace(",", ""))
@@ -160,10 +141,6 @@ def extract_ranking(text: str) -> int | None:
     return None
 
 
-# TODO: Implementar as funções:
-# Extract_currency
-# Extract_numbers
-# Extract_percent
 def extract_info_based_on_type(target_type: str, text: str, asset: str) -> Dict:
     """
     Extrai informações específicas com base no tipo de alvo.
@@ -173,23 +150,21 @@ def extract_info_based_on_type(target_type: str, text: str, asset: str) -> Dict:
     currency = extract_currency(text)
     if currency is None:
         currency = "USD"  # Default currency if none found
-        notas_currency = "USD assumed as default currency" # TODO: Adicionar isso na lista de notas depois
+        notas_currency = "USD assumed as default currency"  # TODO: Adicionar isso na lista de notas depois
         notes.append(notas_currency)
 
     if target_type == "target_price":
         # Extração de números esta separada aqui
         numbers = extract_numbers(text)
-        if len(numbers) >= 1: # Da pra criar uma função de logica para escolher qual valor utilizar
-            numbers = numbers[0]['value']
+        if (
+            len(numbers) >= 1
+        ):  # Da pra criar uma função de logica para escolher qual valor utilizar
+            numbers = numbers[0]["value"]
         if numbers == []:
             numbers = None
             notas_price = "No price found"
             notes.append(notas_price)
-        target_price = TargetPrice(
-            asset=asset,
-            price=numbers,
-            currency=currency
-        )
+        target_price = TargetPrice(asset=asset, price=numbers, currency=currency)
         return target_price
 
     elif target_type == "pct_change":
@@ -198,7 +173,7 @@ def extract_info_based_on_type(target_type: str, text: str, asset: str) -> Dict:
         percent_change = PercentageChange(
             asset=asset,
             percentage=percent,
-            currency=currency  # Default currency, can be improved to extract from text
+            currency=currency,  # Default currency, can be improved to extract from text
         )
         return percent_change
 
@@ -209,7 +184,7 @@ def extract_info_based_on_type(target_type: str, text: str, asset: str) -> Dict:
             asset=asset,
             min=min,
             max=max,
-            currency=currency  # Default currency, can be improved to extract from text
+            currency=currency,  # Default currency, can be improved to extract from text
         )
         return range
 
@@ -218,10 +193,10 @@ def extract_info_based_on_type(target_type: str, text: str, asset: str) -> Dict:
         ranking = Ranking(
             asset=asset,
             ranking=rank,
-            currency=currency  # Default currency, can be improved to extract from text
+            currency=currency,  # Default currency, can be improved to extract from text
         )
         return ranking
-    print('Nenhum tipo foi identificado')
+    print("Nenhum tipo foi identificado")
     return None
 
 
@@ -236,7 +211,7 @@ def parse_datetime(text: str, base_time: datetime | None = None) -> datetime | N
     settings = {
         "RETURN_AS_TIMEZONE_AWARE": True,
         "TIMEZONE": "UTC",
-        "TO_TIMEZONE": "UTC"
+        "TO_TIMEZONE": "UTC",
     }
     if base_time:
         settings["RELATIVE_BASE"] = base_time
@@ -244,16 +219,8 @@ def parse_datetime(text: str, base_time: datetime | None = None) -> datetime | N
     dt = dateparser.parse(text, settings=settings)
 
     if dt is None:
-        return Timeframe(
-            explicit=False,
-            start=None,
-            end=None
-        )
-    return Timeframe(
-        explicit=True,
-        start=base_time.isoformat(),
-        end=dt.isoformat()
-    )
+        return Timeframe(explicit=False, start=None, end=None)
+    return Timeframe(explicit=True, start=base_time.isoformat(), end=dt.isoformat())
     # return dt
 
 
@@ -266,7 +233,7 @@ def extract_time_expression(text: str) -> str | None:
         r"(next quarter)",
         r"(next year)",
         r"(in \d+ days?)",
-        ]
+    ]
 
     for pat in TIME_PATTERNS:
         match = re.search(pat, text, re.IGNORECASE)
@@ -280,11 +247,7 @@ def extract_and_parse_time(text: str, base_time: datetime) -> Timeframe | None:
     trecho = extract_time_expression(text)
     if trecho:
         return parse_datetime(trecho, base_time)
-    return Timeframe(
-        explicit=False,
-        start=None,
-        end=None
-    )
+    return Timeframe(explicit=False, start=None, end=None)
 
 
 # dict_assets = get_asset_list()

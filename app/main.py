@@ -11,6 +11,7 @@ from src.parsers import (
     extract_and_parse_time,
 )
 from fastapi import FastAPI
+import os
 
 BEAR_BULL_THRESHOLD = 0.3
 
@@ -30,7 +31,6 @@ def processa_tweet(tweet: Tweet) -> Output:
     # target_type = classify_target_type(tweet.post_text)
     target_type = custom_target_classify(tweet)
 
-
     # Segundo identificar o tipo de asset {BTC, ETH, SOL, DOGE, etc.}
     asset_dict = get_asset_list()
 
@@ -40,6 +40,7 @@ def processa_tweet(tweet: Tweet) -> Output:
         asset = extract_asset(tweet.post_text, list(asset_dict.values()))
         if asset == None:
             asset = "the market asset was not identified"
+            asset_note = "the market asset was not identified"
 
     # Terceiro Identificar os valores associados {price, currency, percentage, min, max, ranking}
 
@@ -70,7 +71,11 @@ def processa_tweet(tweet: Tweet) -> Output:
         notes=None,
     )
 
-    notes = extract_model_notes(tweet.post_text, contexto=str(output))
+    GROQ_KEY = os.getenv("GROQ_KEY")
+    if GROQ_KEY:
+        notes = extract_model_notes(tweet.post_text, contexto=str(output))
+    else:
+        extra_notes.append()
 
     output.notes = notes.message.content
 

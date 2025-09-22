@@ -7,6 +7,7 @@ import os
 
 GROQ_KEY = os.getenv("GROQ_KEY")
 
+
 # Primeiro identificar o tipo de alvo {target_price, pct_change, range, ranking, none}
 def classify_target_type(text: str) -> None:
     """
@@ -39,7 +40,8 @@ def classify_target_type(text: str) -> None:
     response = model.choices[0].message.content.lower().strip()
     valid_types = {"target_price", "pct_change", "range", "ranking"}
 
-    return response if response in valid_types else 'none'
+    return response if response in valid_types else "none"
+
 
 def extract_model_notes(tweet, contexto) -> List[str]:
     """
@@ -69,7 +71,6 @@ def extract_model_notes(tweet, contexto) -> List[str]:
     response = model.choices[0]
     # response = model.choices[0].message.content.lower().strip()
     return response
-
 
 
 # classify_target_type("BTC breaking $100k before Christmas! Mark my words")
